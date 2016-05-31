@@ -1,0 +1,11 @@
+<div class="center jumbotron">
+ <h1 style="color:#CD5C5C" align="center">
+ Welcome <%= current_user.name %>.....!
+ </h1>
+ <p align="center" style="color:red" >Contacts<br>
+ 	
+ 		<%= link_to "View", contacts_path ,class: 'btn btn-info btn-lg' %><br>
+ 		<%= link_to "Add New", new_contact_path ,class: 'btn btn-primary btn-lg' %><br>
+ 	
+ </p>
+ </div>

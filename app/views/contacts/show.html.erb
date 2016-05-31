@@ -1,0 +1,10 @@
+
+<div class="center jumbotron">
+	<strong>Name   :</strong> <%= @contact.name %><br>
+	<strong>Phone  :</strong><%= @contact.phone %><br>
+	<strong>Address:</strong> <%= @contact.address %>	<br>
+	<%= link_to "Edit ", edit_contact_path(@contact.id) ,class: 'btn btn-warning btn-sm' %>
+	<%= link_to "Delete", contact_path ,method: :delete, data: { confirm: 'Are you sure?' } ,class: 'btn btn-danger btn-sm' %>
+
+</div>
+<%= link_to "back", contacts_path ,class: 'btn btn-link btn-lg' %>

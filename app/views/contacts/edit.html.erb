@@ -1,0 +1,30 @@
+<h1 align="center">Edit Contacts</h1><br><br>
+
+	<div class="col-md-6 col-md-offset-3" align="left">
+<%= form_for @contact do |f| %>
+  <div class="field" align="left">
+    <%= f.label :name, "Name   :    " %>
+		<%= f.text_field :name %>
+  </div>
+
+  <div class="field" align="left">
+    <%= f.label :phone, "Phone :    " %>
+		<%= f.text_field :phone %>
+  </div>
+
+  
+    <div class="field" align="left">
+     <%= f.label :address, "Address : " %>
+		<%= f.text_area :address %>
+    </div>
+  
+  	
+
+  <div class="actions" align="left">
+    <%= f.submit "Submit" %>
+  </div>
+
+<% end %>
+
+</div>
+
