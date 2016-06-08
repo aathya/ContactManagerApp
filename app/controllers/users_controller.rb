@@ -1,4 +1,4 @@
-class UsersController < Devise::ApplicationController
+class UsersController < ApplicationController
 	
 	def create
 		
